@@ -21,14 +21,14 @@
         <title>Tienda de Ropa</title>
     </head>
     <body>
-        <h1>{$prendas}</h1>
-        <form method="POST">
-		<!--<label>$prendas}</label>
-		<input type= "text" id="prendas" name="prendas">-->
+        <form>
+			<label></label>
+			<input type= "text" id="prendas" name="prendas">
 			<select>
 				{foreach from=$prendas item=nombre_categoria}
 					<option value="{$prendas->ID}">{$nombre_categoria->ID}</option>
 				{/foreach}
+				
 			</select>
 		</form>
     </body>

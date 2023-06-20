@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-19 20:23:05
-  from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\templates\prendas.tpl' */
+/* Smarty version 4.3.1, created on 2023-06-19 23:22:35
+  from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64909d097aa5d8_06651791',
+  'unifunc' => 'content_6490c71bd77a05_50923424',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'b08f766d6d3be2ae9e1616d24de63c4ff82886e6' => 
+    'baa7983fa37ab8578e145ba2bd18a173125d9f04' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\templates\\prendas.tpl',
-      1 => 1687198983,
+      0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\templates\\header.tpl',
+      1 => 1687209752,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64909d097aa5d8_06651791 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6490c71bd77a05_50923424 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--<h1>$prendas}</h1> aca ira el nav-->
 
 <!--<table>
@@ -44,7 +44,6 @@ function content_64909d097aa5d8_06651791 (Smarty_Internal_Template $_smarty_tpl)
         <title>Tienda de Ropa</title>
     </head>
     <body>
-        
         <form>
 			<label></label>
 			<input type= "text" id="prendas" name="prendas">
@@ -61,7 +60,7 @@ $_smarty_tpl->tpl_vars['nombre_categoria']->do_else = false;
 				<?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-				<button type="submit" >Enviar</button>
+				
 			</select>
 		</form>
     </body>

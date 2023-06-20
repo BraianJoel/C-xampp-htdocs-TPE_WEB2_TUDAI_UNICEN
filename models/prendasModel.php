@@ -12,21 +12,27 @@ class prendasModel{
         $sentencia->execute();
 
         $datos= $sentencia->fetchAll(PDO::FETCH_OBJ);
+
+        return $datos;
     }
+    //obtener dato por ID
     public function getPrendasById($id){
         $sentencia=$this->db->prepare("SELECT*FROM prendas WHERE (id)=?");
         $sentencia->execute([$id]);
 
         return $sentencia->fetch(PDO::FETCH_OBJ);
     }
+    //insertar datos
     public function insertPrenda($img, $prenda, $descripcion, $precio ){
         $sentencia=$this->db->prepare("INSERT INTO prendas (img, prenda, descripcion, precio) VALUES(?,?,?,?)");
         $sentencia->execute([$img, $prenda, $descripcion, $precio]);
     }
+        //modificar datos
     public function updatePrenda($id, $img, $prenda, $descripcion, $precio){
         $sentencia=$this->db->prepare("UPDATE prendas SET img=? prenda=? descripcion=? precio=? WHERE=?");
         $sentencia->execute([$id, $img, $prenda, $descripcion, $precio]);
     }
+    //eliminar dato
     public function deletePrenda($id){
         $sentencia=$this->db->prepare("DELETE FROM prendas WHERE (id)=?");
         $sentencia->execute([$id]);

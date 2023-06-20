@@ -11,6 +11,6 @@
             $this->smarty->assign('titulo', "Iniciar Sesión"); 
             $this->smarty->assign('error', $error);
 
-            $this->smarty->display('Templates/outh.tpl');  
+            $this->smarty->display('Templates/Login.tpl');  
         }  
     }
