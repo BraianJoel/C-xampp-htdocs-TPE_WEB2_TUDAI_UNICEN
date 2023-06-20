@@ -20,28 +20,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tienda de Ropa</title>
     </head>
-    <body>
-        <!--<form>
-			<select>
-				foreach from=$prendas item=prenda}
-					<option value="$prenda->ID}">$prenda->prendas_ID}</option>
-				/foreach}
-			</select>
-		</form>-->
-	<table border="1px">
-		<tbody>
-		{foreach from=$prendas item=prenda}
-			<tr>
-				<td><h1>{$prenda->nombre}</h1></td>
-			</tr>
-			<tr>
-				<td><h3>{$prenda->img}</h3></td>
-				<td><h3>{$prenda->descripcion}</h3></td>
-				<td><h3>Precio: $  {$prenda->Precio}</h3></td>
-			<tr>
-		{/foreach}
-		</tbody>
-	</table>
+		<table border="1px">
+			<tbody>
+			{foreach from=$prendas item=prenda}
+				<tr>
+					<td><h1>{$prenda->nombre}</h1></td>
+				</tr>
+				<tr>
+					<td><h3>{$prenda->img}</h3></td>
+					<td><h3>{$prenda->descripcion}</h3></td>
+					<td><h3>Precio: $  {$prenda->Precio}</h3></td>
+				<tr>
+			{/foreach}
+			</tbody>
+		</table>
+	</body>
 </html>
 
 

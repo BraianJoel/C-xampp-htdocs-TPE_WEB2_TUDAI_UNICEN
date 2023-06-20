@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-20 20:18:41
-  from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\Templates\Login.tpl' */
+/* Smarty version 4.3.1, created on 2023-06-20 20:45:09
+  from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\templates\Login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6491ed81a2e416_83572236',
+  'unifunc' => 'content_6491f3b537a407_38253995',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '93ac511a34973a2eb476f6f6ccd73d97011304f5' => 
+    'f94c85712d842166b75828115d604c484c73afa4' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\Templates\\Login.tpl',
+      0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\templates\\Login.tpl',
       1 => 1687285116,
       2 => 'file',
     ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:header.tpl' => 1,
   ),
 ),false)) {
-function content_6491ed81a2e416_83572236 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6491f3b537a407_38253995 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--aca ira la autenticacion para que el usuario que  se logee a la feria-->
 <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
