@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-19 23:22:35
+/* Smarty version 4.3.1, created on 2023-06-20 09:13:55
   from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6490c71bd77a05_50923424',
+  'unifunc' => 'content_649151b3894a01_09608155',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'baa7983fa37ab8578e145ba2bd18a173125d9f04' => 
     array (
       0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\templates\\header.tpl',
-      1 => 1687209752,
+      1 => 1687245229,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6490c71bd77a05_50923424 (Smarty_Internal_Template $_smarty_tpl) {
+function content_649151b3894a01_09608155 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--<h1>$prendas}</h1> aca ira el nav-->
 
 <!--<table>
@@ -44,26 +44,38 @@ function content_6490c71bd77a05_50923424 (Smarty_Internal_Template $_smarty_tpl)
         <title>Tienda de Ropa</title>
     </head>
     <body>
-        <form>
-			<label></label>
-			<input type= "text" id="prendas" name="prendas">
+        <!--<form>
 			<select>
-				<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['prendas']->value, 'nombre_categoria');
-$_smarty_tpl->tpl_vars['nombre_categoria']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['nombre_categoria']->value) {
-$_smarty_tpl->tpl_vars['nombre_categoria']->do_else = false;
+				foreach from=$prendas item=prenda}
+					<option value="$prenda->ID}">$prenda->prendas_ID}</option>
+				/foreach}
+			</select>
+		</form>-->
+	<table border="1px">
+		<tbody>
+		<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['prendas']->value, 'prenda');
+$_smarty_tpl->tpl_vars['prenda']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['prenda']->value) {
+$_smarty_tpl->tpl_vars['prenda']->do_else = false;
 ?>
-					<option value="<?php echo $_smarty_tpl->tpl_vars['prendas']->value->ID;?>
-"><?php echo $_smarty_tpl->tpl_vars['nombre_categoria']->value->ID;?>
-</option>
-				<?php
+			<tr>
+				<td><h1><?php echo $_smarty_tpl->tpl_vars['prenda']->value->nombre;?>
+</h1></td>
+			</tr>
+			<tr>
+				<td><h3><?php echo $_smarty_tpl->tpl_vars['prenda']->value->img;?>
+</h3></td>
+				<td><h3><?php echo $_smarty_tpl->tpl_vars['prenda']->value->descripcion;?>
+</h3></td>
+				<td><h3>Precio: $  <?php echo $_smarty_tpl->tpl_vars['prenda']->value->Precio;?>
+</h3></td>
+			<tr>
+		<?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-				
-			</select>
-		</form>
-    </body>
+		</tbody>
+	</table>
 </html>
 
 

@@ -16,9 +16,9 @@ require_once('helpers/prendasAuth.php');
         public function showLogin() {
             $this->view->showLogin();
         }
-        public function vereficarUser($username){
-            if(isset($_POST['usurname']) && isset ($_POST['password'])) {
-                $usurname=$_POST['usurname'];
+        public function vereficarUser($username) {
+            if(isset($_POST['username']) && isset ($_POST['password'])) {
+                $usurname=$_POST['username'];
                 $password=$_POST['password'];
                 $user= $this->model->getUsersById($username);
             }
@@ -26,7 +26,7 @@ require_once('helpers/prendasAuth.php');
                 $this->outhHelper->login($user);
 
             }
-            else{
+            else {
                 $this->view->showLogin();
             }
         } 

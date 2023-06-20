@@ -21,17 +21,27 @@
         <title>Tienda de Ropa</title>
     </head>
     <body>
-        <form>
-			<label></label>
-			<input type= "text" id="prendas" name="prendas">
+        <!--<form>
 			<select>
-				{foreach from=$prendas item=nombre_categoria}
-					<option value="{$prendas->ID}">{$nombre_categoria->ID}</option>
-				{/foreach}
-				
+				foreach from=$prendas item=prenda}
+					<option value="$prenda->ID}">$prenda->prendas_ID}</option>
+				/foreach}
 			</select>
-		</form>
-    </body>
+		</form>-->
+	<table border="1px">
+		<tbody>
+		{foreach from=$prendas item=prenda}
+			<tr>
+				<td><h1>{$prenda->nombre}</h1></td>
+			</tr>
+			<tr>
+				<td><h3>{$prenda->img}</h3></td>
+				<td><h3>{$prenda->descripcion}</h3></td>
+				<td><h3>Precio: $  {$prenda->Precio}</h3></td>
+			<tr>
+		{/foreach}
+		</tbody>
+	</table>
 </html>
 
 

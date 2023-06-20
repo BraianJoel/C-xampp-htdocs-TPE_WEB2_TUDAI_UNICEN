@@ -10,4 +10,5 @@
             <td><h3>Precio: $  $prenda->Precio}</h3></td>
         <tr>
     </tbody>
-</table>
+</table>-->
+

@@ -18,7 +18,7 @@
             $prendas=$this->model->getPrendasConPartes();
             $this->view->showPrendas($prendas);
         }
-        public function showObtener($id) {
+        /*public function showObtener($id) {
             $obtener=$this->model->getPrendasById($id);
             if(!empty($obtener)) {
                 $this->view->showGetPrendabyId($obtener);
@@ -27,13 +27,15 @@
 
         }  
         public function showInsertar($img, $prenda, $descripcion, $precio ){
-            $insert=$this->model->insertPrenda($img, $prenda, $descripcion, $precio );
+
+            /*$insert=$this->model->insertPrenda($img, $prenda, $descripcion, $precio );
             if(!empty($insert)) {
                 $this->view->showInserPrenda($insert);
                 header("location: ". BASE_URL ."header");
             }
-        }
-        public function showModificar($id, $img, $prenda, $descripcion, $precio){
+        }*/
+        
+        /*public function showModificar($id, $img, $prenda, $descripcion, $precio){
             $modificar=$this->model->updatePrenda($id, $img, $prenda, $descripcion, $precio);
             if(!empty($modificar)) {
                 $this->view->showModificarPrenda($modificar);
@@ -43,7 +45,7 @@
         public function showDelete($id){
             $eliminar=$this->model->deletePrenda($id);
             if(!empty($eliminar)) {
-                $this->view-> showEliminarPrenda($eliminar);
+                $this->view->showModificarPrenda($eliminar);
                 header("location: ". BASE_URL ."header");
             }
         }
@@ -53,8 +55,8 @@
         }
         function showDescripcion($id){
             $detalle=$this->model->getDetalleByID($id);
-            $this->view->showDescripcion($detalle);
-        }*/
+            $this->view->showDescripcion($detalle);*/
+        }
     
         
 ?>
