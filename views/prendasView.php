@@ -12,7 +12,7 @@
     
         function showPrendas($prendas) {
             // asigno variables al tpl smarty
-            $this->smarty->assign('name', "Tienda de ropa vintaje - unisex"); 
+            $this->smarty->assign('titulo', "Tienda de ropa vintaje - unisex"); 
             $this->smarty->assign('prendas', $prendas);
             $this->smarty->assign('BASE_URL', BASE_URL);
     

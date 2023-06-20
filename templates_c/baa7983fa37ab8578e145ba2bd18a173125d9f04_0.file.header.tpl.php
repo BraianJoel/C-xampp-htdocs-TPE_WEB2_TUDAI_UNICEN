@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-20 20:46:00
+/* Smarty version 4.3.1, created on 2023-06-20 23:17:41
   from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6491f3e8c7a116_81126053',
+  'unifunc' => 'content_6492177569c567_00212577',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'baa7983fa37ab8578e145ba2bd18a173125d9f04' => 
     array (
       0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\templates\\header.tpl',
-      1 => 1687286758,
+      1 => 1687295857,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6491f3e8c7a116_81126053 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6492177569c567_00212577 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--<h1>$prendas}</h1> aca ira el nav-->
 
 <!--<table>
@@ -41,7 +41,8 @@ function content_6491f3e8c7a116_81126053 (Smarty_Internal_Template $_smarty_tpl)
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tienda de Ropa</title>
+        <title><?php echo $_smarty_tpl->tpl_vars['titulo']->value;?>
+</title>
     </head>
 		<table border="1px">
 			<tbody>

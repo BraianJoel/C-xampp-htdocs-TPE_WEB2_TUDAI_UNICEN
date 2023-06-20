@@ -11,9 +11,9 @@ class prendasModel{
         $sentencia=$this->db->prepare("SELECT prendas.*, partes.nombre_categoria as parte FROM prendas JOIN partes ON prendas.prendas_ID = partes.ID_prendas");
         $sentencia->execute();
 
-        $datos= $sentencia->fetchAll(PDO::FETCH_OBJ);
+        $prendas= $sentencia->fetchAll(PDO::FETCH_OBJ);
 
-        return $datos;
+        return $prendas;
     }
     //obtener dato por ID
     public function getPrendasById($id){

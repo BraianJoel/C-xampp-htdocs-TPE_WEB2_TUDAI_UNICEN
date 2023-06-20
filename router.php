@@ -19,7 +19,7 @@
             $controller=new loginControl();
             $controller->showLogin();
             break;
-        case 'obtener prendas':
+        case 'prendas':
             $controller=new prendasController();
             $controller->showAll();
             /*switch($params[1]) {S
@@ -29,7 +29,7 @@
                     break;
             }*/
             break;
-        /*case 'obtener prenda':
+        /*case 'prenda':
              $controller=new prendasController();
              $controller-> showObtener($params[1]);
              break;
