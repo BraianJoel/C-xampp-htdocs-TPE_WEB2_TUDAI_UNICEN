@@ -15,7 +15,7 @@
             $this->smarty->assign('titulo', "Tienda de ropa vintaje - unisex"); 
             $this->smarty->assign('prendas', $prendas);
             // mostrar el tpl
-            $this->smarty->display('Templates/prendas.tpl');
+            $this->smarty->display('Templates/tablaPrendas.tpl');
         }
         function showGetPrendabyId() { 
             $this->smarty->assign('titulo', 'Obtener prenda');

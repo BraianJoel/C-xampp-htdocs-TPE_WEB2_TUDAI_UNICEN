@@ -1,4 +1,4 @@
-{include file='header.tpl'}
+{include file='main.tpl'}
 <table border="1px">
     <tbody>
     {foreach from=$prendas item=$prenda}

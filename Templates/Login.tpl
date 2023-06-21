@@ -1,5 +1,5 @@
 <!--aca ira la autenticacion para que el usuario  se logee-->
-{include file="header.tpl"}
+{include file="main.tpl"}
 <form class="formulario" action="{BASE_URL}verificar" method="POST" autocomplete="off">
     <table>
         <tr>
