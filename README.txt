@@ -1,5 +1,5 @@
 
 Archivo para importar la base de datos se encuentra dentro de la carpeta "database".
 
-User:
-password:
+User: Prendas@indumentaria
+password:prendas#345%iux68
