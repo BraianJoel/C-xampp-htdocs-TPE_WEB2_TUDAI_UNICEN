@@ -1,7 +1,7 @@
 <?php
 require_once('models/loginModel.php');
 require_once('views/loginView.php');
-require_once('helpers/prendasAuth.php');
+require_once('helpers/outhAuth.php');
 
     class loginControl {
         private $model;
@@ -16,13 +16,13 @@ require_once('helpers/prendasAuth.php');
         public function showLogin() {
             $this->view->showLogin();
         }
-        public function verificar($username) {
+        public function verificar() {
             if(isset($_POST['username']) && isset ($_POST['password'])) {
-                $usurname=$_POST['username'];
+                $username=$_POST['username'];
                 $password=$_POST['password'];
-                $user= $this->model->getUsersById($username);
+                $username= $this->model->getUsersById($username);
             }
-            if(!empty($user) && password_verify($password, $usurname->$password)) {
+            if(!empty($user) && password_verify($password, $username->$password)) {
                 $this->outhHelper->login($user);
 
             }

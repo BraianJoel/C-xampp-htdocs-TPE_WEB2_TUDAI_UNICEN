@@ -7,10 +7,14 @@
         <title>{$titulo}</title>
     </head>
 <body>
+    <div>
 	<a href='{BASE_URL}login'>Login</a>
-	<a href='{BASE_URL}prendas'>Prendas</a>
+    </div>
+    <div>
+	<nav><a href='{BASE_URL}prendas'>Prendas</a>
 	<a href='{BASE_URL}insertar'>Añadir prenda</a>
     <a href='{BASE_URL}obtener'>Obtener prenda</a>
     <a href='{BASE_URL}modificar'>Actualizar prenda</a>
-    <a href='{BASE_URL}eliminar'>Eliminar prenda</a>
+    <a href='{BASE_URL}eliminar'>Eliminar prenda</a></nav>
+    </div>
 	<h1>{$titulo}</h1>

@@ -7,9 +7,9 @@
          public function __construct() {
              $this->smarty = new Smarty(); // inicializo Smarty
          }
-         function showlogin($error= null){
+         function showlogin(/*$error= null*/){
             $this->smarty->assign('titulo', "Iniciar Sesión"); 
-            $this->smarty->assign('error', $error);
+            //$this->smarty->assign('error', $error);
 
             $this->smarty->display('Templates/Login.tpl');  
         }  

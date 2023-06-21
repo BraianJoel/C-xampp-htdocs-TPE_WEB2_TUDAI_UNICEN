@@ -9,7 +9,7 @@
         $action = $_GET['action'];
     }
     else {
-        $action = 'login'; // acción 
+        $action = 'prendas'; // acción 
     }
     
     $params = explode('/', $action); // variable accion
@@ -21,7 +21,7 @@
             break;
         case 'verificar':
             $controller= new loginControl();
-            $controller->verificar($params[1]);
+            $controller->verificar();
             break;
         case 'prendas':
             $controller=new prendasController();
@@ -60,9 +60,9 @@
             $controller=new prendasController();
             $controller->delete();
             break;
-        default
-            
-            break;
+        //default 
+            //$controller->showAll();
+          // break;
     }
 
 

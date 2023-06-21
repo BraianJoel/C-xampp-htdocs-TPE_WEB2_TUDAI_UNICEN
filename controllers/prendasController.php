@@ -1,7 +1,7 @@
 <?php
     require_once('models/prendasModel.php');
     require_once('views/prendasView.php');
-    require_once('helpers/prendasAuth.php');
+    require_once('helpers/outhAuth.php');
 
 
     Class prendasController {

@@ -6,12 +6,8 @@
             <td>user: <input type="text" name="user" value="" placeholder="ingrese usuario" /></td>
             <td>password: <input type="password" name="pass" placeholder="ingrese contraseña"/></td>
         </tr>
-        {if $error}
-        <tr>
-            <td>{$error}</td>
-        </tr>
-        {/if}
     </table>
-
-    <button type="submit">Ingresar</button>
+    <tr>
+        <td><button type="submit">Ingresar</button></td>
+    </tr>
 </form>
