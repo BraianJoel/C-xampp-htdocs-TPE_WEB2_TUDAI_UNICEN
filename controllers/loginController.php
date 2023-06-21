@@ -16,7 +16,7 @@ require_once('helpers/prendasAuth.php');
         public function showLogin() {
             $this->view->showLogin();
         }
-        public function vereficar($username) {
+        public function verificar($username) {
             if(isset($_POST['username']) && isset ($_POST['password'])) {
                 $usurname=$_POST['username'];
                 $password=$_POST['password'];

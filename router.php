@@ -21,7 +21,7 @@
             break;
         case 'verificar':
             $controller= new loginControl();
-            $controller->verificar();
+            $controller->verificar($params[1]);
             break;
         case 'prendas':
             $controller=new prendasController();
