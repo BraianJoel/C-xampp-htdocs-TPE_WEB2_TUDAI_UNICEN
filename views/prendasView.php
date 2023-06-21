@@ -17,35 +17,30 @@
             // mostrar el tpl
             $this->smarty->display('Templates/prendas.tpl');
         }
-        function showGetPrendabyId($obtener) { 
-            $this->smarty->assign('prendas', $obtener);
+        function showGetPrendabyId() { 
+            $this->smarty->assign('titulo', 'Obtener prenda');
             $this->smarty->assign('BASE_URL', BASE_URL);
             
-            $this->smarty->display('Templates/.tpl');
+            $this->smarty->display('Templates/getPrenda.tpl');
         }
         function showInsertPrenda(){
             $this->smarty->assign('titulo', 'Insertar prenda');
             $this->smarty->display('Templates/addPrenda.tpl');
         }
-        function showModificarPrenda($modificar){
-            $this->smarty->assign('prendas', $modificar);
+        function showModificarPrenda(){
+            $this->smarty->assign('titulo', 'Actualizar prenda');
             $this->smarty->assign('BASE_URL', BASE_URL);
             
-            $this->smarty->display('Templates/header.tpl');
+            $this->smarty->display('Templates/updatePrenda.tpl');
         }
-        function showEliminarPrenda($eliminar){
-            $this->smarty->assign('prendas', $eliminar);
+        function showEliminarPrenda(){
+            $this->smarty->assign('titulo', 'Eliminar Prenda');
             $this->smarty->assign('BASE_URL', BASE_URL);
             
-            $this->smarty->display('Templates/header.tpl');
+            $this->smarty->display('Templates/deletePrenda.tpl');
         }
     }
-         /*clase vista el cosntructor y demas se realizaran
-        dos funciones: lista con html (lista de objetos) y armar un html 
-        y muestra toda la info mediantes ancor mediante links de listas desordenadas y 
-        la segunda la ptra vista donde seve el detalle producto descripcion y precio. CTR +D (ME MARCA DETALLE DE TODAS LAS PALABRAS IGUALES*/
-
-
+         
 
     
     

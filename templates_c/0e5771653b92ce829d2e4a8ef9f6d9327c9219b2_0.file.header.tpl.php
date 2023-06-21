@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-06-21 04:31:37
-  from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\templates\header.tpl' */
+/* Smarty version 4.3.1, created on 2023-06-21 04:31:38
+  from 'C:\xampp\htdocs\TPE_WEB2_TUDAI_UNICEN\Templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_649261091c3933_79432073',
+  'unifunc' => 'content_6492610ad2e5d1_35295501',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'baa7983fa37ab8578e145ba2bd18a173125d9f04' => 
+    '0e5771653b92ce829d2e4a8ef9f6d9327c9219b2' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\templates\\header.tpl',
+      0 => 'C:\\xampp\\htdocs\\TPE_WEB2_TUDAI_UNICEN\\Templates\\header.tpl',
       1 => 1687314690,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_649261091c3933_79432073 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6492610ad2e5d1_35295501 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
     <html lang="en">
     <head>

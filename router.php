@@ -9,10 +9,10 @@
         $action = $_GET['action'];
     }
     else {
-        $action = 'login'; // acción por defecto
+        $action = 'login'; // acción 
     }
     
-    $params = explode('/', $action); /* definir variable accion con lo que yo quiero*/
+    $params = explode('/', $action); // variable accion
 
     switch ($params[0]) {
         case 'login':
@@ -26,17 +26,15 @@
         case 'prendas':
             $controller=new prendasController();
             $controller->showAll();
-            /*switch($params[1]) {S
-                case 'detalle':
-                    $controller=new prendasController();
-                    $controller->showDescripcion($params[2]);
-                    break;
-            }*/
             break;
-        /*case 'prenda':
+        case 'obtener':
              $controller=new prendasController();
-             $controller-> showObtener($params[1]);
-             break;*/
+             $controller-> showObtener();
+             break;
+        case 'getPrenda':
+            $controller=new prendasController();
+            $controller->obtener();
+            break;
         case 'insertar':
             $controller=new prendasController();
             $controller->showInsertar();
@@ -45,13 +43,22 @@
             $controller=new prendasController();
             $controller-> Insertar();
             break;
-        /*case 'modificar': 
+        case 'modificar': 
             $controller=new prendasController();
-            $controller->showModificar($id, $img, $prenda, $descripcion, $precio);
+            $controller->showModificar();
             break;
+        case 'updatePrenda': 
+            $controller=new prendasController();
+            $controller->Modificar();
+            break;
+
         case 'eliminar':
             $controller=new prendasController();
-            $controller->showDelete($params[1]);
+            $controller->showDelete();
+            break;
+        case 'deletePrenda':
+            $controller=new prendasController();
+            $controller->delete();
             break;
         //default
             # code...

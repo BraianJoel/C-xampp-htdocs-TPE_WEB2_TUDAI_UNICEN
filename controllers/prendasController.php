@@ -18,14 +18,17 @@
             $prendas=$this->model->getPrendasConPartes();
             $this->view->showPrendas($prendas);
         }
-        /*public function showObtener($id) {
+        public function showObtener(){
+            $this->view->showGetPrendabyId();
+        }
+        public function obtener(){
+            $id=$_POST['obtener'];
             $obtener=$this->model->getPrendasById($id);
             if(!empty($obtener)) {
                 $this->view->showGetPrendabyId($obtener);
                 header("location: ". BASE_URL ."header");
             }
-
-        } */ 
+        }
         public function ShowInsertar(){
             $this->view->showInsertPrenda();
         }
@@ -40,29 +43,35 @@
                 header("location: ". BASE_URL ."header");
             }
         }
+        public function showModificar(){
+            $this->view->showModificarPrenda();
+        }
         
-        /*public function showModificar($id, $img, $prenda, $descripcion, $precio){
-            $modificar=$this->model->updatePrenda($id, $img, $prenda, $descripcion, $precio);
+        public function Modificar(){
+            $img=$_POST["imagen"];
+            $prenda=$_POST['nombre'];
+            $descripcion=$_POST['descripcion'];
+            $precio=$_POST['precio'];
+            $modificar=$this->model->updatePrenda($img, $prenda, $descripcion, $precio);
             if(!empty($modificar)) {
                 $this->view->showModificarPrenda($modificar);
                 header("location: ". BASE_URL ."header");
             }
         }
-        public function showDelete($id){
+        public function showDelete(){
+            $this->view->showEliminarPrenda();
+        }
+        public function delete(){
+            $id=$_POST['eliminar'];
             $eliminar=$this->model->deletePrenda($id);
             if(!empty($eliminar)) {
-                $this->view->showModificarPrenda($eliminar);
+                $this->view->showEliminarPrenda($eliminar);
                 header("location: ". BASE_URL ."header");
             }
         }
     }
-        /* resolver dos funciones: lista de inicio(tiene que obtener datos de BBDD)->pasar esa informacion una funcion del "productvista" 
-        crear una funcion que reciba un elemento(Id o lo que sea) haga peticiones a la BBDD y muestre la informacion especifica de ese datos.
-        }
-        function showDescripcion($id){
-            $detalle=$this->model->getDetalleByID($id);
-            $this->view->showDescripcion($detalle);*/
-        }
+         
+        
     
         
 ?>
