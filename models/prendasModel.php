@@ -8,7 +8,7 @@ class prendasModel{
          , 'root', '');
     }
     public function getPrendasConPartes() {
-        $sentencia=$this->db->prepare("SELECT prendas.*, partes.nombre_categoria as parte FROM prendas JOIN partes ON prendas.prendas_ID = partes.ID_prendas");
+        $sentencia=$this->db->prepare("SELECT * FROM `prendas` INNER JOIN `partes` on prendas.prendas_ID=partes.ID_prendas");
         $sentencia->execute();
 
         $prendas= $sentencia->fetchAll(PDO::FETCH_OBJ);
@@ -24,8 +24,9 @@ class prendasModel{
     }
     //insertar datos
     public function insertPrenda($img, $prenda, $descripcion, $precio ){
-        $sentencia=$this->db->prepare("INSERT INTO prendas (img, prenda, descripcion, precio) VALUES(?,?,?,?)");
-        $sentencia->execute([$img, $prenda, $descripcion, $precio]);
+        $sentencia=$this->db->prepare("INSERT INTO `prendas` (img, prenda, descripcion, precio) VALUES(?,?,?,?)");
+        $sentencia->execute(array[$img, $prenda, $descripcion, $precio]);
+        
     }
         //modificar datos
     public function updatePrenda($id, $img, $prenda, $descripcion, $precio){

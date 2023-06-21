@@ -25,15 +25,21 @@
                 header("location: ". BASE_URL ."header");
             }
 
-        }  
-        public function showInsertar($img, $prenda, $descripcion, $precio ){
-
-            /*$insert=$this->model->insertPrenda($img, $prenda, $descripcion, $precio );
+        } */ 
+        public function ShowInsertar(){
+            $this->view->showInsertarPrenda();
+        }
+        public function Insertar(){
+            $prenda=$_POST['nombre'];
+            $descripcion=$_POST['descripcion'];
+            $precio=$_POST['precio'];
+            $img = $_POST["imagen"];
+            $insert=$this->model->insertPrenda($img, $prenda, $descripcion, $precio);
             if(!empty($insert)) {
                 $this->view->showInserPrenda($insert);
                 header("location: ". BASE_URL ."header");
             }
-        }*/
+        }
         
         /*public function showModificar($id, $img, $prenda, $descripcion, $precio){
             $modificar=$this->model->updatePrenda($id, $img, $prenda, $descripcion, $precio);

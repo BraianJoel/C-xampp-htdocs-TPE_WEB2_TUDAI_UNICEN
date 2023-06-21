@@ -19,6 +19,10 @@
             $controller=new loginControl();
             $controller->showLogin();
             break;
+        case 'verificar':
+            $controller= new loginControl();
+            $controller->verificar();
+            break;
         case 'prendas':
             $controller=new prendasController();
             $controller->showAll();
@@ -32,12 +36,16 @@
         /*case 'prenda':
              $controller=new prendasController();
              $controller-> showObtener($params[1]);
-             break;
+             break;*/
         case 'insertar':
             $controller=new prendasController();
-             $controller-> showInsertar($img, $prenda, $descripcion, $precio );
-             break;
-        case 'modificar': 
+            $controller->showInsertar();
+            break;
+        case 'addPrenda':
+            $controller=new prendasController();
+            $controller-> Insertar();
+            break;
+        /*case 'modificar': 
             $controller=new prendasController();
             $controller->showModificar($id, $img, $prenda, $descripcion, $precio);
             break;

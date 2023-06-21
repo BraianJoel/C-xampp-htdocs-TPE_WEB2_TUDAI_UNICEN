@@ -14,22 +14,18 @@
             // asigno variables al tpl smarty
             $this->smarty->assign('titulo', "Tienda de ropa vintaje - unisex"); 
             $this->smarty->assign('prendas', $prendas);
-            $this->smarty->assign('BASE_URL', BASE_URL);
-    
             // mostrar el tpl
-            $this->smarty->display('Templates/header.tpl');
+            $this->smarty->display('Templates/prendas.tpl');
         }
         function showGetPrendabyId($obtener) { 
             $this->smarty->assign('prendas', $obtener);
             $this->smarty->assign('BASE_URL', BASE_URL);
             
-            $this->smarty->display('Templates/header.tpl');
+            $this->smarty->display('Templates/.tpl');
         }
-        function showInserPrenda($insert){
-            $this->smarty->assign('prendas', $insert);
-            $this->smarty->assign('BASE_URL', BASE_URL);
-            
-            $this->smarty->display('Templates/header.tpl');
+        function showInsertarPrenda(){
+            $this->smarty->assign('titulo', 'Insertar prenda');
+            $this->smarty->display('Templates/addPrenda.tpl');
         }
         function showModificarPrenda($modificar){
             $this->smarty->assign('prendas', $modificar);

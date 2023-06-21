@@ -1,7 +1,6 @@
 <!--aca ira la autenticacion para que el usuario que  se logee a la feria-->
 {include file="header.tpl"}
-<h1>{$titulo}<h1>
-<form class="formulario" action="{BASE_URL}" method="POST" autocomplete="off">
+<form class="formulario" action="{BASE_URL}verificar" method="POST" autocomplete="off">
     <table>
         <tr>
             <td>user: <input type="text" name="user" value="" placeholder="ingrese usuario" /></td>
