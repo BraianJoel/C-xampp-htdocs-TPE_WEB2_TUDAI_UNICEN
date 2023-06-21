@@ -25,7 +25,7 @@ class prendasModel{
     //insertar datos
     public function insertPrenda($img, $prenda, $descripcion, $precio ){
         $sentencia=$this->db->prepare("INSERT INTO `prendas` (img, prenda, descripcion, precio) VALUES(?,?,?,?)");
-        $sentencia->execute(array[$img, $prenda, $descripcion, $precio]);
+        $sentencia->execute(array($img, $prenda, $descripcion, $precio));
         
     }
         //modificar datos

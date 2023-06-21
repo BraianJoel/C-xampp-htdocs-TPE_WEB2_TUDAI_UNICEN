@@ -23,7 +23,7 @@
             
             $this->smarty->display('Templates/.tpl');
         }
-        function showInsertarPrenda(){
+        function showInsertPrenda(){
             $this->smarty->assign('titulo', 'Insertar prenda');
             $this->smarty->display('Templates/addPrenda.tpl');
         }

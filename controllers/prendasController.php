@@ -27,7 +27,7 @@
 
         } */ 
         public function ShowInsertar(){
-            $this->view->showInsertarPrenda();
+            $this->view->showInsertPrenda();
         }
         public function Insertar(){
             $prenda=$_POST['nombre'];
@@ -36,7 +36,7 @@
             $img = $_POST["imagen"];
             $insert=$this->model->insertPrenda($img, $prenda, $descripcion, $precio);
             if(!empty($insert)) {
-                $this->view->showInserPrenda($insert);
+                $this->view->showInsertPrenda($insert);
                 header("location: ". BASE_URL ."header");
             }
         }
