@@ -60,9 +60,9 @@
             $controller=new prendasController();
             $controller->delete();
             break;
-        //default
-            # code...
-            //break;*/
+        default
+            
+            break;
     }
 
 
